@@ -24,7 +24,6 @@ function closePopup() {
  function handleCredentialResponse(response) {
             console.log("JWT Token: " + response.credential);
 
-            // Decode JWT (optional)
             const data = JSON.parse(atob(response.credential.split('.')[1]));
             console.log("Name:", data.name);
             console.log("Email:", data.email);
