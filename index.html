@@ -58,7 +58,18 @@
         </div>
 
         <button class="signup" onclick="validateAndSignup()">Create Account</button>
-        <button class="google">Login with Google</button>
+        <div id="g_id_onload"
+         data-client_id="201148274181-sbdhhedtsckcsiqdlhcbg8gpv752d566.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">
+    </div>
+
+    <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular">
+    </div>
         <button class="github">Login with GitHub</button>
         <button class="login">Already have an account? Login</button>
 
